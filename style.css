@@ -101,6 +101,8 @@ p {
 /*main*/
 main {
   margin: var(--white-space);
+  display: grid;
+  gap: var(--white-space);
 }
 .bikeCard {
   background-color: var(--color-4);
