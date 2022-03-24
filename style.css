@@ -1,0 +1,14 @@
+:root {
+  --bg-color: rgb(255, 244, 223);
+  --link-color: #70000b;
+  --link-hover-color: #b90316;
+  --color-4: white;
+  --color-5: black;
+
+  --primary-font: Times, serif;
+  --secondary-font: Arial, sans-serif;
+  --main-text-color: #252525;
+  --primary-font-size: 1rem;
+
+  --white-space: 2rem;
+}
