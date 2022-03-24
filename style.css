@@ -7,7 +7,7 @@
 
   --primary-font: Times, serif;
   --secondary-font: Arial, sans-serif;
-  --main-text-color: #252525;
+  --main-text-color: #494949;
   --primary-font-size: 1rem;
 
   --white-space: 2rem;
@@ -18,6 +18,7 @@ body {
   background-color: var(--bg-color);
   font-family: var(--primary-font);
   font-size: var(--primary-font-size);
+  color: var(--main-text-color);
 }
 
 /*Header*/
@@ -31,7 +32,8 @@ header {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-transform: uppercase;
   font-weight: 200;
   margin: 0;
@@ -97,6 +99,56 @@ p {
 }
 
 /*main*/
+main {
+  margin: var(--white-space);
+}
+.bikeCard {
+  background-color: var(--color-4);
+  padding: calc(var(--white-space) / 1.5);
+}
+.bikeCard:hover {
+  transform: scale(1.05);
+  border-radius: 2rem;
+  transition: ease all 0.5s;
+}
+.bikeCard img {
+  max-width: 100%;
+  margin-bottom: calc(var(--white-space) / 2);
+}
+.brand {
+  font-weight: 600;
+}
+.name {
+  font-size: calc(var(--primary-font-size) * 1.7);
+  border-bottom: solid var(--main-text-color);
+}
+.productInfo {
+  margin-top: calc(var(--white-space) / 2);
+  padding: calc(var(--white-space) / 4);
+  border: solid var(--main-text-color) 0.01rem;
+
+  display: grid;
+  row-gap: calc(var(--white-space) / 2);
+}
+.productInfo p,
+.productInfo div {
+  border-bottom: solid var(--main-text-color) 0.01rem;
+}
+.productInfo button {
+  justify-self: center;
+  background-color: var(--color-4);
+  color: var(--link-color);
+  border: solid var(--link-color) 0.1rem;
+
+  padding: calc(var(--white-space) / 4);
+  text-transform: uppercase;
+  width: 8rem;
+}
+.productInfo button:hover {
+  background-color: var(--link-color);
+  color: var(--color-4);
+  transition: ease all 0.5s;
+}
 /*footer*/
 footer {
   background-color: var(--link-color);
