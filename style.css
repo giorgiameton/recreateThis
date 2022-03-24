@@ -12,3 +12,10 @@
 
   --white-space: 2rem;
 }
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: var(--primary-font);
+  font-size: var(--primary-font-size);
+}
