@@ -19,3 +19,46 @@ body {
   font-family: var(--primary-font);
   font-size: var(--primary-font-size);
 }
+
+/*Header*/
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 200;
+  margin: 0;
+}
+h1,
+h3,
+p {
+  font-family: var(--secondary-font);
+  margin: 0;
+}
+.logo {
+  background: var(--color-5);
+  color: var(--color-4);
+  padding: calc(var(--white-space) / 4);
+  width: 8rem;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.logo::before {
+  content: " ";
+  background-color: white;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  font-weight: bold;
+  align-self: center;
+  margin-right: calc(var(--white-space) / 4);
+}
+.logo::after {
+  content: " ";
+  background-color: white;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  font-weight: bold;
+  align-self: center;
+  margin-left: calc(var(--white-space) / 4);
+}
