@@ -97,7 +97,9 @@ p {
   text-transform: uppercase;
   color: var(--link-color);
 }
-
+.topNav a:hover {
+  color: var(--link-hover-color);
+}
 /*main*/
 main {
   margin: var(--white-space);
