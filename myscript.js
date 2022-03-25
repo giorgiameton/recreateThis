@@ -18,7 +18,7 @@ function handleProductList(data) {
   data.forEach(showProduct);
 }*/
 
-const url = "http://giorgiameton.com/wp-bikestock/wp-json/wp/v2/bike?";
+const url = "https://giorgiameton.com/wp-bikestock/wp-json/wp/v2/bike?";
 fetch(url)
   .then(function (res) {
     return res.json();
