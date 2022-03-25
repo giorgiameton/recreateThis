@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
 :root {
   --bg-color: rgb(241, 241, 232);
   --link-color: #70000b;
@@ -5,9 +7,9 @@
   --color-4: white;
   --color-5: black;
 
-  --primary-font: Times, serif;
-  --secondary-font: Arial, sans-serif;
-  --main-text-color: #494949;
+  --primary-font: "Lora", serif;
+  --secondary-font: "Signika Negative", sans-serif;
+  --main-text-color: #5c5c5c;
   --primary-font-size: 1rem;
 
   --white-space: 2rem;
