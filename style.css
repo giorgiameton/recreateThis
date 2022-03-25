@@ -44,6 +44,9 @@ h3 {
   font-weight: 200;
   margin: 0;
 }
+h2 {
+  letter-spacing: 0.3rem;
+}
 h1,
 h3,
 p {
@@ -102,6 +105,7 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--link-color);
+  letter-spacing: 0.3rem;
 }
 .topNav a:hover {
   color: var(--link-hover-color);
