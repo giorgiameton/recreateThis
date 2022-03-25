@@ -144,7 +144,11 @@ main {
 .productInfo div {
   border-bottom: solid var(--main-text-color) 0.01rem;
 }
-
+.color,
+.stock,
+.price {
+  color: var(--color-5);
+}
 .colorContainer {
   display: flex;
   gap: calc(var(--white-space) / 4);
