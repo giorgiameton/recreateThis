@@ -13,6 +13,10 @@
   --white-space: 2rem;
 }
 
+.hide {
+  display: none;
+}
+
 body {
   margin: 0;
   background-color: var(--bg-color);
@@ -137,6 +141,31 @@ main {
 .productInfo p,
 .productInfo div {
   border-bottom: solid var(--main-text-color) 0.01rem;
+}
+
+.colorContainer {
+  display: flex;
+  gap: calc(var(--white-space) / 4);
+}
+.colorContainer div {
+  width: 1rem;
+  height: 1rem;
+  border: none;
+}
+.white {
+  background-color: antiquewhite;
+}
+.black {
+  background-color: black;
+}
+.red {
+  background-color: #b90316;
+}
+.blue {
+  background-color: rgb(87, 87, 255);
+}
+.green {
+  background-color: rgb(176, 224, 136);
 }
 .productInfo button {
   justify-self: center;

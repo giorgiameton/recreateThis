@@ -42,14 +42,37 @@ async function showProduct(product) {
   clone.querySelector(".name").textContent = product.title.rendered;
   clone.querySelector(".brand").textContent = product.brand;
   clone.querySelector(".stock").textContent = product.in_stock;
-  clone.querySelector(".price").textContent = `$${product.price}`;
+
   if (product.secondary_price) {
     clone.querySelector(
       ".price"
     ).textContent = `$${product.price} - $${product.secondary_price}`;
   }
+  if (product.secondary_price == false) {
+    clone.querySelector(".price").textContent = `$${product.price}`;
+  }
 
   clone.querySelector(".bikeCard img").src = product.image.guid;
+
+  //colors
+  if (product.white == true) {
+    clone.querySelector(".white").classList.remove("hide");
+  }
+  if (product.black == true) {
+    clone.querySelector(".black").classList.remove("hide");
+  }
+  if (product.red == true) {
+    clone.querySelector(".red").classList.remove("hide");
+  }
+  if (product.blue == true) {
+    clone.querySelector(".blue").classList.remove("hide");
+  }
+  if (product.green == true) {
+    clone.querySelector(".green").classList.remove("hide");
+  }
+  if (product.color == true) {
+    clone.querySelector(".color").textContent = " N/A";
+  }
   //grab parent
   const parent = document.querySelector("main");
   //append clone
